@@ -1,6 +1,6 @@
 # Javascript_level1
-# JavaScript Program To Print Hello World
-# JavaScript Program to Add Two Numbers
+# JavaScript Program To Print Hello World (Web Page)
+# JavaScript Program to Add Two Numbers (Web Page)
 # JavaScript Program to Find the Square Root
 # JavaScript Program to Calculate the Area of a Triangle
 # JavaScript Program to Swap Two Variables
