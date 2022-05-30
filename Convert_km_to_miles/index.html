@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversion from KM to Miles</title>
+    <link rel="stylesheet" href="../add_numbers/style.css">
 </head>
+
 <body>
-    <h1>JavaScript Program to Convert Kilometers to Miles
-        <script>
-            var a = Number(prompt("Enter the Value in Kilometers: "));
-            alert("Value in Miles : " + a * 0.621371);
-        </script>
-    </h1>
+
+    <header>
+        <div class="content" id="middle">
+            <h1>Javascript Program For Converting Kilometers to Miles</h1>
+            <form action="">
+                <label for="">Enter the Value in Kilometers :</label>
+                <input type="number" id="first" value="" placeholder="KM">
+                <input type="button" value="CONVERT" name="calculate" onclick="conversion()">
+                <label for="">Value in Miles :</label>
+                <input type="number" id="result">
+            </form>
+
+
+        </div>
+    </header>
+    <script>
+        function conversion(){
+        var a = parseFloat(document.getElementById('first').value);
+        document.getElementById('result').value = a * 0.621371;
+        }
+    </script>
+
 </body>
+
 </html>

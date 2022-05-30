@@ -6,16 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversion From Celcius to Farenheit</title>
+    <link rel="stylesheet" href="../add_numbers/style.css">
 </head>
 
 <body>
-    <h1>Javascript Program to Convert Celsius to Fahrenheit
-        <script>
-            var a = Number(prompt("Enter the Value in Celsius: "));
-            a = (a * 9 / 5) + 32;
-            alert("Value in Fahrenheit : " + a);
-        </script>
-    </h1>
+
+    <header>
+        <div class="content" id="middle">
+            <h1>Javascript Program For Converting Celsius to Fahrenheit</h1>
+            <form action="">
+                <label for="">Enter the Value in Celsius :</label>
+                <input type="number" id="first" value="" placeholder="Celcius">
+                <input type="button" value="CONVERT" name="calculate" onclick="conversion()">
+                <label for="">Value in Fahrenheit :</label>
+                <input type="number" id="result">
+            </form>
+
+
+        </div>
+    </header>
+    <script>
+        function conversion(){
+        var a = parseFloat(document.getElementById('first').value);
+        document.getElementById('result').value = (a * 9 / 5) + 32;
+        }
+    </script>
 </body>
 
 </html>
